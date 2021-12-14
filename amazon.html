@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon by Masai</title>
+</head>
+
+<style>
+    body {
+        margin: 0px;
+    }
+
+    #navbar {
+        display: flex;
+        height: 50px;
+        color: white;
+        background-color: #131921;
+        padding-top: 5px;
+    }
+
+    #amazon-logo,
+    #account,
+    #returns,
+    #cart {
+        flex: 1;
+    }
+
+    #country {
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #location {
+        flex: 2;
+        margin-left: 30px;
+    }
+
+    #searchbar {
+        flex: 8;
+        display: flex;
+    }
+
+    #logo {
+        width: 130px;
+        height: 50px;
+    }
+
+    #input {
+        width: 100%;
+    }
+
+    #country-icon {
+        width: 24px;
+        height: 18px;
+    }
+
+    #cart-icon {
+        width: 84px;
+        height: 50px;
+    }
+
+    #navbar-2 {
+        display: flex;
+        background-color: #232f3e;
+        color: white;
+        height: 40px;
+    }
+
+    #navbar-2 div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 15px;
+    }
+
+    #main {
+        padding-left: 140px;
+        padding-right: 140px;
+        background: #eaeded;
+    }
+
+    #tab-1 {
+        display: flex;
+        position: absolute;
+        top: 392px;
+        width: 1500px;
+
+        height: 320px;
+        gap: 30px;
+    }
+
+    #tab-1 div {
+        width: 100%;
+        z-index: 2;
+        background-color: white;
+    }
+
+    #banner {
+        width: 1500px;
+        height: 600px;
+    }
+
+    #box {
+        display: grid;
+        grid-template-columns: 45% 45%;
+        justify-content: center;
+        height: 230px;
+    }
+
+    #box div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #box img {
+        width: 160px;
+        height: 100px;
+    }
+
+    h2 {
+        padding-left: 25px;
+    }
+
+    #explore-tab-1 {
+        display: flex;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        overflow: scroll;
+    }
+
+    #explore-tab-1 div {
+        flex: 1;
+        margin-left: 15px;
+        margin-top: 15px;
+        background-color: #ffffff;
+    }
+
+    #explore-tab-1 img {
+        width: 230px;
+        height: 250px;
+
+    }
+
+    #category-banner {
+        display: flex;
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    #footer {
+        display: flex;
+
+        padding-top: 50px;
+
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+        background-color: #232f3e;
+        color: white;
+    }
+
+    #footer-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #232f3e;
+    }
+
+    #footer-logo img {
+        width: 76px;
+        height: 40px;
+    }
+
+    #back {
+        background-color: #37475a;
+        height: 40px;
+        color: white;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #searchbar-2 {
+        flex: 8;
+        display: flex;
+        background-color: yellow;
+    }
+</style>
+
+<body>
+    <div id="navbar">
+        <div id="amazon-logo">
+            <img id="logo" src="./Screenshot 2021-12-02 at 9.44.38 AM.png" />
+        </div>
+        <div id="location">
+            <div>Deliver to Sarita Maurya</div>
+
+            <div>Ayodhya 224001</div>
+        </div>
+        <div id="searchbar">
+            <input id="input" type="text" />
+
+            <img src="./Screenshot 2021-12-02 at 9.41.03 AM.png" />
+        </div>
+        <div id="country">
+            <img id="country-icon" src="./Screenshot 2021-12-02 at 9.51.35 AM.png" />
+        </div>
+        <div id="account">
+            <div>Hello, Sarita Maurya</div>
+            <div>Account & Lists</div>
+        </div>
+        <div id="returns">
+            <div>Returns</div>
+            <div>& Orders</div>
+        </div>
+        <div id="cart">
+            <img id="cart-icon" src="./Screenshot 2021-12-02 at 9.54.40 AM.png" />
+        </div>
+    </div>
+
+    <div id="navbar-2">
+        <div id="categories">
+            <div>All</div>
+            <div>Browsing History</div>
+            <div>Toys & Games</div>
+            <div>Gift Ideas</div>
+            <div>Baby</div>
+            <div>Gift Cards</div>
+            <div>Health, Household & Personal Care</div>
+            <div>Kindle eBooks</div>
+            <div>Home Improvement</div>
+            <div>Buy Again</div>
+            <div>Amazon Business</div>
+        </div>
+    </div>
+
+    <div id="main">
+        <div id="main-image">
+            <img id="banner" src="https://m.media-amazon.com/images/I/613u2sx7cAL._SX3000_.jpg" />
+
+            <div id="tab-1">
+                <div>
+                    <h2>Top rated, premium quality | Amazon Brands & more</h2>
+
+                    <div id="box">
+                        <div>
+                            <img
+                                src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/AmazonBrands/GW/QC/Home/B06Y5GF9SF_Asins_372x232._SY232_CB409842837_.jpg" />
+                        </div>
+                        <div>
+                            <img
+                                src="https://images-eu.ssl-images-amazon.com/images/G/31/home_private_label/moritika/pbbaupbgw/xcm_banners_furniture_372x232_372x232_in-en._SY232_CB666250428_.jpg" />
+                        </div>
+                        <div>
+                            <img
+                                src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/AmazonBrands/GWTransition/2-4_186x116._SY116_CB433910795_.jpg" />
+                        </div>
+                        <div>
+                            <img
+                                src="https://images-eu.ssl-images-amazon.com/images/G/31/Symbol/2020/GatewayNK/PC/spb_186x116._SY116_CB433889053_.jpg" />
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>Pay your credit card bills on Amazon</h2>
+
+                    <div id="box">
+                        <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img19/AmazonPay/Boson/Sid/CCBP/DesktopGateway_CategoryCard_379x304_CCBP._SY304_CB413372299_.jpg"
+                            height="200px" width="200px" alt="">
+
+                    </div>
+                </div>
+
+                <div>
+                    <h2>Automotive essentials | Up to 60% off</h2>
+
+                    <div id="box">
+                        <div>
+                            <img
+                                src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Glasscare1X._SY116_CB410830553_.jpg" />
+                        </div>
+                        <div>
+                            <img
+                                src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Rim_tyrecare1x._SY116_CB410830552_.jpg" />
+                        </div>
+                        <div>
+                            <img
+                                src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vega_helmet_186x116._SY116_CB405090404_.jpg" />
+                        </div>
+                        <div>
+                            <img
+                                src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vaccum1x._SY116_CB410830552_.jpg" />
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>Sign in for your best experience</h2>
+
+                    <div id="box">
+
+
+                        <img src="https://m.media-amazon.com/images/G/31/img19/AMS/Houseads/Laptops-Sept2019._CB436595915_.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="explore-tab-1">
+
+        <div>
+            <img src="https://m.media-amazon.com/images/I/313CFbI-YjL._AC_SY400_.jpg" />
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/I/71sTA21JxEL._AC_SY200_.jpg" />
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/I/61KxLULGvBL._AC_SY200_.jpg" />
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/I/51JU8ZlLATL._AC_SY200_.jpg" />
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/I/51BWw9fnsCL._AC_SY200_.jpg" />
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/I/41FzSPMlLmL._AC_SY200_.jpg" />
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/I/41pgDJTCeML._AC_SY200_.jpg" />
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/I/31QdEoeXgbL._AC_SY200_.jpg" />
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/I/313CFbI-YjL._AC_SY400_.jpg" />
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/I/51FBkjkNmES._AC_SY200_.jpg" />
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/I/71sTA21JxEL._AC_SY200_.jpg" />
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/I/313CFbI-YjL._AC_SY400_.jpg" />
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/I/51FBkjkNmES._AC_SY200_.jpg" />
+        </div>
+        <div>
+            <img src="https://m.media-amazon.com/images/I/71sTA21JxEL._AC_SY200_.jpg" />
+        </div>
+    </div>
+
+    <div id="category-banner">
+        <img id="category-banner-img" src="https://m.media-amazon.com/images/G/31/AMS/IN/970X250-_desktop_banner.jpg" />
+    </div>
+
+    <div id="back">Back to top</div>
+
+    <div id="footer">
+        <div>
+            <h3>Get to know us</h3>
+            <p>About Us</p>
+            <p>Careers</p>
+            <p>Press Releases</p>
+        </div>
+        <div>
+            <h3>Connect With Us</h3>
+            <p>Facebook</p>
+            <p>Twitter</p>
+            <p>Instagram</p>
+        </div>
+        <div>
+            <h3> Make Money with Us</h3>
+
+            <p>About us</p>
+            <p>Careers</p>
+            <p>Press Releases</p>
+        </div>
+        <div>
+            <h3>Get to know us</h3>
+
+            <p>About us</p>
+            <p>Careers</p>
+            <p>Press Releases</p>
+        </div>
+    </div>
+    <hr>
+
+    <div id="footer-logo">
+        <img src="./Screenshot 2021-12-03 at 11.36.16 AM.png" />
+    </div>
+
+</body>
+
+</html>
